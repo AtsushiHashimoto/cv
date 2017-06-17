@@ -32,6 +32,27 @@
 </head>
 
 <body>
+  
+<span><script src="<a class="linkclass" href="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js</a>"></script>
+<script>
+(function($) {
+    $(function() {
+        var $header = $('#top-head');
+        // Nav Fixed
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 350) {
+                $header.addClass('fixed');
+            } else {
+                $header.removeClass('fixed');
+            }
+        });
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
+    });
+})(jQuery);
+</script></span>
 <header id="top-head">
     <div class="inner">
         <div id="mobile-head">
@@ -56,26 +77,7 @@
         </nav>
     </div>
 </header>
-<span><script src="<a class="linkclass" href="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js</a>"></script>
-<script>
-(function($) {
-    $(function() {
-        var $header = $('#top-head');
-        // Nav Fixed
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 350) {
-                $header.addClass('fixed');
-            } else {
-                $header.removeClass('fixed');
-            }
-        });
-        // Nav Toggle Button
-        $('#nav-toggle').click(function(){
-            $header.toggleClass('open');
-        });
-    });
-})(jQuery);
-</script></span>
+
   <h1> 橋本敦史のWeb page</h1>
 </body>
 </html>
