@@ -14,11 +14,11 @@
   <meta property="og:title" content="Web page of Atsushi Hashimoto" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://AtsushiHashimoto.github.io/" />
-  <meta property="og:image" content="https/://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12065589_10153294699391429_1095921006790519567_n.jpg?oh=153ce844830902e0b371694dee5da537&oe=59D5C71C" />
+  <meta property="og:image" content="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12065589_10153294699391429_1095921006790519567_n.jpg?oh=153ce844830902e0b371694dee5da537&oe=59D5C71C" />
   <meta property="fb:admins" content="739231428" />
   <meta property="og:description" content="CV of Atsushi Hashimoto"/>
   <meta property="og:locale" content="ja_JP" />
- 
+
   <!-- twitterに関するタグ -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@a_hasimoto" />
@@ -30,51 +30,175 @@
   <![endif]-->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  
+
   <!-- nav -->
   <link rel="stylesheet" href="css/responsive-nav.css">
   <script src="js/responsive-nav.min.js"></script>
-  
+
+  <!-- my customization -->
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
   <header>
-    <nav><div id="nav">
+    <nav>
+      <div id="nav" class="nav-collapse">
       <ul>
         <li><a href="#profile">Profile</a></li>
         <li><a href="#history">History</a></li>
-        <li><a href="#publications">Publication</a></li>
+        <li><a href="#publication">Publication</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#activity">Activity</a></li>
       </ul>
-     </div></nav>
+      </div></nav>
+      <button id="nav-toggle" class="nav-toggle">MENU</button>
   </header>
   <main>
     <article>
       <section class="profile">
         <a name="profile"/>
-        <h1> 橋本 敦史</h1>
-        <h2> 所属 </h2>
-    
-        <h2> 研究分野 </h2>
-        <h2> 連絡先 </h2>
-      </section>  
+        <h1>プロフィール</h1>
+        <div class="left_column">
+          <h2> 橋本 敦史</h2>
+          <h2> 所属 </h2>
+          <p>
+            京都大学教育学研究科・助教<br/>
+            京都大学学術情報メディアセンター・研究協力<br/>
+          </p>
+        </div>
+        <div class="right_column">
+          <img class="circle_200" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12065589_10153294699391429_1095921006790519567_n.jpg?oh=153ce844830902e0b371694dee5da537&oe=59D5C71C" />
+        </div>
+        <div class="left_column">
+          <h2> 研究分野 </h2>
+          <p>
+            パターン認識・機械学習<br/>
+            画像処理・マルチメディア処理<br/>
+            ヒューマンコンピュータインタラクション<br/>
+          </p>
+        </div>
+        <div class="right_column">
+          <h2> 連絡先 </h2>
+          <p>
+            E-mail: hashimoto.atsushi.8x [at] kyoto-u.ac.jp<br/>
+            Twitter: @a_hasimoto<br/>
+            Facebook: atsushi.hasimoto<br/>
+          </p>
+        </div>
+        <div class="single_column">
+      </section>
       <section class="history">
         <a name="history"/>
         <h1> 経歴 </h1>
+        <h2> 学歴・職歴 </h2>
+        <ul>
+           <li>1997.4 - 2000.3 : 北海道札幌北高等学校</li>
+           <li>2000.4 - 2005.3 : 京都大学 工学部 情報学科</li>
+           <li>2005.4 - 2008.3 : 京都大学大学院 情報学研究科 知能情報学専攻 博士前期課程</li>
+           <li>2008.3 - 2011.3 : 京都大学大学院 情報学研究科 知能情報学専攻 博士後期課程 (指導認定退学)</li>
+           <li>2011.4 - 2012.5 : 京都大学学術情報メディアセンター 教務補佐員</li>
+           <li>2012.6 - 2015.3 : 京都大学法学研究科助手</li>
+           <li>2015.4 - 現在 : 京都大学教育学研究科助教</li>
+         </ul>
+         <h2>学位取得・その他</h2>
+         <ul>
+           <li>2005.3 京都大学学士（工学）指導教員:岩間一雄</li>
+           <li>2006.4 - 2007.3 : ヴルカヌス・イン・ヨーロッパに参加, ドイツのLeica Camera社にて研修 (この間大学は休学)</li>
+           <li>2008.3 京都大学修士（情報学）指導教員:美濃導彦</li>
+           <li>2013.3 京都大学博士（情報学）指導教員:美濃導彦</li>
+         </ul>
       </section>
       <section class="publication">
         <a name="publication"/>
         <h1> 論文・研究発表等 </h1>
+        <a href="http://researchmap.jp/7000009266" target="_blank">Research Map</a>を参照ください
+        <!--<h2> 論文（英文）</h2>
+        <h2> 国際会議発表 </h2>
+        <h2> 論文（和文）</h2>
+        <h2> 研究発表（国内）</h2>
+        <h2> 講演 </h2>
+        <ul>
+        	<li>Dec. 2010: Lecture @ Taiwan Univ.</li>
+        	<li>Mar. 2015: Lecture @ <a href="http://recruit-jinji.jp/haruno-infoprocessing-matsuri/">春の情報処理祭 in 京都(リクルートホールディングス，情報処理学会の共催)</a>
+          <li>Dec. 2016: Lecture @ Taiwan Univ.</li>
+        </ul>
+        <h2> 特許 </h2>
+        <h2> 受賞 </h2>
+        <h3>本人の受賞</h3>
+        <h3>指導学生の受賞</h3>-->
       </section>
       <section class="project">
         <a name="project"/>
         <h1> 研究プロジェクト </h1>
+        <h2> スマートキッチン </h2>
+        <h3> コンセプト動画 </h3>
+        <p>
+          <video src="http://www.mm.media.kyoto-u.ac.jp/wp-content/uploads/2014/11/sk_project_2014_kyoto_univ.mp4" controls/>
+        </p>
+        <h3> オープンソースの研究成果等 </h3>
+        <p>
+          データセット: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/" target="_brank">KUSK Dataset</a> および <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/kusk-dataset/kusk-object-dataset/" target=_brank>KUSK Object Dataset</a></br>
+          記述言語: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/hwml/" target="_brank">レシピ等の記述形式 HWML</a></br>
+          インターフェイス: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/chiffon/" target="_brank">HWMLに従う作業レシピの提示を外部から操作するためのツール「CHIFFON」</a></br>
+        </p>
+        <h2> 競争的資金（開始年度順） </h2>
+        <h3> 研究代表 </h3>
+          <ul>
+            <li>人工知能研究振興財団研究助成	橋本敦史	カメラと荷重センサの統合による机上物体と人とのインタラクション検出		2012/04/01〜2013/03/31</li>
+            <li>若手B	代表	物体操作を介した心的状態の推定		2016/04/01〜2019/03/31</li>
+            <li>立石科学技術振興財団2017年度助成A	橋本敦史	高次元空間での外れ値検出と教師なし分類によるワードグラウンディング技術の開発		2017/04/01〜2018/03/31</li>
+          </ul>
+        <h3> 分担・その他 </h3>
+          <ul>
+            <li>基盤A	分担	食材，道具，動作の認識を連携させた調理行動の認識		2012/04/01〜2016/03/31</li>
+            <li>基盤B	分担	作業実施映像からの手順文書の自動生成		2014/04/01〜2018/03/31</li>
+            <li>挑戦的萌芽研究	分担	立体イメージベースモデリングによる眼杯組織の動力学場推定		2015/04/01〜2017/03/31</li>
+            <li>挑戦的萌芽研究	分担	姿勢空間への投影によるボトムアップ型マウス行動分析		2016/04/01〜2019/03/31</li>
+            <li>CREST	分担	サステイナブル漁業に向けたデータ指向型リアルタイム解析基盤の開発		2016/12/01〜2019/03/31</li>
+          </ul>
+        <h2> 共同研究他 </h2>
+          <ul>
+            <li>クックパッド株式会社 料理画像とレシピテキストとの対応付けに関する研究 2016/07/01〜2017/06/30</li>
+            <li>クックパッド株式会社 画像処理にもとづく Machine-Readable なレシピ表現言語の開発 2017/07/01〜2018/03/31</li>
+          </ul>
       </section>
       <section class="activity">
         <a name="activity"/>
         <h1> 社会活動 </h1>
+        <h2> 大学運営 </h2>
+        <ul>
+          <li>京都大学 教育学研究科 紀要編集委員会	2015/04/01〜2016/03/31</li>
+          <li>京都大学 教育学研究科 学術情報整備委員会	2015/04/01〜2018/03/31</li>
+          <li>京都大学 教育学研究科 情報セキュリティ委員会	2015/04/01〜2018/03/31</li>
+        </ul>
+        <h2> 講義 </h2>
+        <ul>
+          <li>京都大学 教育学研究科 教育情報学 2016年度前期，2017年度前期</li>
+        </ul>
+        <h2> 学会活動 </h2>
+        <h3> 研究会運営 </h3>
+        <ul>
+          <li>情報処理学会 コンピュータビジョンとイメージメディア研究会	運営委員 2014/04/01〜</li>
+          <li> 電子情報通信学会 マルチメディア・仮想環境基礎研究会	2014/04/01〜2017/03/31</li>
+          <li> 電子情報通信学会 メディアエクスペリエンス・バーチャル環境基礎研究会	2017/04/01〜 (マルチメディア・仮想環境基礎研究会より改名)</li>
+          <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 食メディア研究会	運営委員		2013/04/01〜2015/03/31</li>
+          <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 食メディア研究会	幹事		2015/04/01〜</li>
+        </ul>
+        <h3> 学術会議・論文誌等運営 </h3>
+        <ul>
+          <li>IEEE	7th International Workshop on Multimedia for Cooking and Eating Activity	Organizing Chair	2014/12/01〜2015/11/30</li>
+          <li>IEEE	8th International Workshop on Multimedia for Cooking and Eating Activities	Organizing Chair	2015/12/01〜2016/11/30</li>
+          <li>電子情報通信学会	FIT2016	プログラム委員	2016/01/01〜2016/12/31</li>
+          <li>電子情報通信学会論文誌HCG特集号		編集委員	2016/04/01〜2017/03/31</li>
+          <li>IJCAI	9th International Workshop on Multimedia for Cooking and Eating Activities	Publication Chair	2016/12/01〜2017/11/30</li>
+          <li>ACM	Computer Graphics International 2017	Program Committee	2017/03/07〜2017/06/30</li>
+          <li>HCGシンポジウム2017 運営委員 2017/06/01〜2017/12/09</li>
+        </ul>
+        <h2> 産学連携 </h2>
+          <ul>
+            <li>株式会社Lixil 学術指導契約 行動観察調査の自動化に最適な映像解析技術 2016/11/01〜2018/3/31</li>
+          </ul>
       </section>
     </article>
   </main>
@@ -82,7 +206,9 @@
     <small>Copyright &copy; 2017 Atsushi Hashimoto All Rights Reserved.</small>
   </footer>
   <script>
-    var navigation = responsiveNav("#nav");
+    var navigation = responsiveNav("#nav", {
+        customToggle: "#nav-toggle"
+      });
 </script>
 </body>
 </html>
