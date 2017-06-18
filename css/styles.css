@@ -1,12 +1,7 @@
-img.circle_100 {
-  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-}
-img.circle_200 {
-  border-radius: 100px;
-  height: 200px;
-  width: 200px;
+img.circle_50percent {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
 }
 
 div.left_column {
@@ -41,6 +36,12 @@ h3::after{content:"】";}
 h3{
   font-size:medium;
 }
+
+video{
+  width:100%;
+}
+
+
 /* Nav */
 @-webkit-viewport { width: device-width; }
 @-moz-viewport { width: device-width; }
