@@ -2,6 +2,7 @@ img.circle_50percent {
   border-radius: 50%;
   height: 50%;
   width: 50%;
+  max-width: 200px;
 }
 
 div.left_column {
