@@ -38,8 +38,11 @@ h2{
   margin-top:1.5em;
   width:50%;
   color:#484848;
-  font-size:larger;
+  font-size:large;
   border-bottom:dotted 1px #484848;
+}
+h2.my_name{
+  font-size:x-large;
 }
 h3::before{content:"【";}
 h3::after{content:"】";}
