@@ -106,9 +106,9 @@ body {
 
 @media screen and (min-width: 40em) {
   .nav-collapse li {
-    width: 20%;
-    *width: 19.9%; /* IE7 Hack */
-    _width: 19%; /* IE6 Hack */
+    width: 16.666%;
+    *width: 16.6%; /* IE7 Hack */
+    _width: 16.6%; /* IE6 Hack */
   }
 }
 
