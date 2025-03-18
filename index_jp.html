@@ -4,26 +4,25 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Web page of Atsushi Hashimoto</title>
-  <meta name="description" content="CV of Atsushi Hashimoto">
-  <meta name="author" content="Atsushi Hashimoto">
+  <title>橋本 敦史</title>
+  <meta name="description" content="橋本敦史のウェブサイト">
+  <meta name="author" content="橋本 敦史">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
-  <!-- facebookに関するタグ -->
-  <meta property="og:site_name" content="Web page of Atsushi Hashimoto" />
-  <meta property="og:title" content="Web page of Atsushi Hashimoto" />
+  <!-- ソーシャルメディアタグ -->
+  <meta property="og:site_name" content="橋本 敦史" />
+  <meta property="og:title" content="橋本 敦史" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://AtsushiHashimoto.github.io/" />
-  <meta property="og:image" content="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12065589_10153294699391429_1095921006790519567_n.jpg?oh=153ce844830902e0b371694dee5da537&oe=59D5C71C" />
-  <meta property="fb:admins" content="739231428" />
-  <meta property="og:description" content="CV of Atsushi Hashimoto"/>
+  <meta property="og:url" content="https://atsushihashimoto.github.io/" />
+  <meta property="og:image" content="./img/my_profile.png" />
+  <meta property="og:description" content="橋本敦史"/>
   <meta property="og:locale" content="ja_JP" />
 
-  <!-- twitterに関するタグ -->
+  <!-- X (旧Twitter) メタタグ -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@a_hasimoto" />
-  <meta name="twitter:description" content="CV of Atsushi Hashimoto" />
-  <meta name="twitter:image:src" content="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/12065589_10153294699391429_1095921006790519567_n.jpg?oh=153ce844830902e0b371694dee5da537&oe=59D5C71C" />
+  <meta name="twitter:description" content="橋本敦史" />
+  <meta name="twitter:image" content="./img/my_profile.png" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -37,6 +36,9 @@
 
   <!-- my customization -->
   <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
@@ -45,11 +47,11 @@
     <nav>
       <div id="nav" class="nav-collapse">
       <ul>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#publication">Publication</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#activity">Activity</a></li>
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#history">経歴</a></li>
+        <li><a href="#publication">論文</a></li>
+        <li><a href="#project">プロジェクト</a></li>
+        <li><a href="#activity">活動</a></li>
         <li><a href="index.html">English</a></li>
       </ul>
       </div></nav>
@@ -60,7 +62,7 @@
   <main>
     <article>
       <section class="profile">
-        <a name="profile"/>
+        <div id="profile"></div>
         <h1 id="top">プロフィール</h1>
         <div class="left_column">
           <h2 class="my_name">
@@ -75,29 +77,29 @@
             </ruby>
           </h2>
           <h2> 所属 </h2>
-          <p>
-            <a href='https://www.omron.com/sinicx/'>OMRON SINIC X Corp.</a> Principle Investigator<br/>
-            <a href='https://www.k-ris.keio.ac.jp/html/100015550_ja.html'>慶應義塾</a> 特任講師<br/>
+          <p class="affiliation">
+            <i class="fas fa-building"></i> <a href='https://www.omron.com/sinicx/'>OMRON SINIC X Corp.</a> Principal Investigator<br/>
+            <i class="fas fa-university"></i> <a href='https://www.k-ris.keio.ac.jp/html/100015550_ja.html'>慶應義塾</a> 特任講師<br/>
           </p>
         </div>
         <div class="right_column">
-          <img class="circle_50percent" src="./img/my_profile.png"/><br>
-          Photograph @神威岬 2021 <br clear="left"/>
+          <img class="circle_50percent" src="./img/my_profile.png" alt="プロフィール写真"/>
+          <p style="text-align: center;">Photograph @神威岬 2021</p>
         </div>
         <div class="left_column">
           <h2> 研究分野 </h2>
-          <p>
-            パターン認識・機械学習<br/>
-            画像処理・マルチメディア処理<br/>
-            ヒューマンコンピュータインタラクション<br/>
+          <p class="research-interests">
+            <i class="fas fa-brain"></i> パターン認識・機械学習<br/>
+            <i class="fas fa-camera"></i> 画像処理・マルチメディア処理<br/>
+            <i class="fas fa-laptop-code"></i> ヒューマンコンピュータインタラクション
           </p>
         </div>
         <div class="right_column">
           <h2> 連絡先 </h2>
-          <p>
-            E-mail: atsushi.hashimoto [at] sinicx.com<br/>
-            Twitter: @a_hasimoto<br/>
-            Facebook: atsushi.hasimoto<br/>
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i> atsushi.hashimoto [at] sinicx.com<br/>
+            <i class="fab fa-x-twitter"></i> @a_hasimoto<br/>
+            <i class="fab fa-facebook"></i> atsushi.hasimoto<br/>
           </p>
         </div>
       <div class="single_column">
@@ -115,7 +117,7 @@
       </section>
       <div class="single_column">
       <section class="history">
-        <a name="history"/>
+        <div id="history"></div>
         <h1> 経歴 </h1>
         <h2> 学歴・職歴 </h2>
         <ul>
@@ -128,7 +130,7 @@
            <li>2015.4 - 2018.3 : 京都大学教育学研究科助教</li>
            <li>2018.4 - 2024.3 : Omron SINIC X corp. Senior Researcher</li>
            <li>2020.11 - 現在 : 慶應義塾 理工学研究科 特任講師</li>
-           <li>2024.4 - 現在 : Omron SINIC X corp. Principle Investigator</li>
+           <li>2024.4 - 現在 : Omron SINIC X corp. Principal Investigator</li>
          </ul>
          <h2>学位取得・その他</h2>
          <ul>
@@ -139,30 +141,21 @@
          </ul>
       </section>
       <section class="publication">
-        <a name="publication"/>
+        <div id="publication"></div>
         <h1> 論文・研究発表等 </h1>
         <p>
         <a href="http://researchmap.jp/atsushi.hashimoto" target="_blank">Research Map</a>を参照ください
         </p>
-        <!--<h2> 論文（英文）</h2>
-        <h2> 国際会議発表 </h2>
-        <h2> 論文（和文）</h2>
-        <h2> 研究発表（国内）</h2>-->
         <h2> 講演資料等(講演歴は論文と同じくresearch mapを参照ください) </h2>
         <ul>
-          <li>Nov. 2018: <a href="https://www.isij.or.jp/?active_action=multidatabase_view_main_detail&block_id=1532&content_id=2685&multidatabase_id=50&lang=english"> 日本鉄鋼協会 計測・制御・システム工学部会シンポジウム </a><br/>
-           人の行動をモデル化して予測する -調理作業支援を題材とした行動予測と情報提示- (<a href="https://www.slideshare.net/atsushihasimoto/ss-122360457?qid=60956dde-3095-491c-b9f3-303a6bbf738e&v=&b=&from_search=10">講演資料</a>)
+          <li>Nov. 2018: <a href="https://www.isij.or.jp/?active_action=multidatabase_view_main_detail&block_id=1532&content_id=2685&multidatabase_id=50&lang=english" target="_blank"> 日本鉄鋼協会 計測・制御・システム工学部会シンポジウム </a><br/>
+           人の行動をモデル化して予測する -調理作業支援を題材とした行動予測と情報提示- (<a href="https://www.slideshare.net/atsushihasimoto/ss-122360457?qid=60956dde-3095-491c-b9f3-303a6bbf738e&v=&b=&from_search=10" target="_blank">講演資料</a>)
           </li>
-          <li>Dec. 2019: 講義@お茶ノ水女子大学 (<a href="https://www.slideshare.net/atsushihasimoto/ocha-20191204">資料</a>)
+          <li>Dec. 2019: 講義@お茶ノ水女子大学 (<a href="https://www.slideshare.net/atsushihasimoto/ocha-20191204" target="_blank">資料</a>)
         </ul>
-        <!--
-        <h2> 特許 </h2>
-        <h2> 受賞 </h2>
-        <h3>本人の受賞</h3>
-        <h3>指導学生等の受賞</h3>-->
       </section>
       <section class="project">
-        <a name="project"/>
+        <div id="project"></div>
         <h1> 主な研究プロジェクト </h1>
         <h2> スマートキッチン (2007.4-2018.3@京大)</h2>
         <h3> コンセプト動画 </h3>
@@ -175,12 +168,12 @@
         </p>
         <h3> オープンソースの研究成果等 </h3>
         <p>
-          データセット: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/" target="_brank">KUSK Dataset</a> および <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/kusk-dataset/kusk-object-dataset/" target=_brank>KUSK Object Dataset</a></br>
-          記述言語: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/hwml/" target="_brank">レシピ等の記述形式 HWML</a></br>
-          インターフェイス: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/chiffon/" target="_brank">HWMLに従う作業レシピの提示を外部から操作するためのツール「CHIFFON」</a></br>
+          データセット: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/" target="_blank">KUSK Dataset</a> および <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/kusk-dataset/kusk-object-dataset/" target="_blank">KUSK Object Dataset</a><br/>
+          記述言語: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/hwml/" target="_blank">レシピ等の記述形式 HWML</a><br/>
+          インターフェイス: <a href="http://kusk.mm.media.kyoto-u.ac.jp/ja/chiffon/" target="_blank">HWMLに従う作業レシピの提示を外部から操作するためのツール「CHIFFON」</a><br/>
         </p>
         <h2> 競争的資金（開始年度順） </h2>
-        <a name="research_fund"/>
+        <div id="research_fund"></div>
         <h3> 研究代表 </h3>
           <ul>
             <li>人工知能研究振興財団研究助成	橋本敦史	カメラと荷重センサの統合による机上物体と人とのインタラクション検出		2012/04/01〜2013/03/31</li>
@@ -193,7 +186,7 @@
             <li>基盤A	分担	食材，道具，動作の認識を連携させた調理行動の認識		2012/04/01〜2016/03/31</li>
             <li>基盤B	分担	作業実施映像からの手順文書の自動生成		2014/04/01〜2018/03/31</li>
             <li>挑戦的萌芽研究	分担	立体イメージベースモデリングによる眼杯組織の動力学場推定		2015/04/01〜2017/03/31</li>
-            <li>挑戦的萌芽研究	分担	姿勢空間への投影によるボトムアップ型マウス行動分析		2016/04/01〜2019/03/31</li>
+            <li>挑戦的萌芽研究	分担	姿勢空間への投影によるボトムアップ型マウス行動分析		2016/04/01〜2019/03/31</li>
             <li>CREST	分担	サステイナブル漁業に向けたデータ指向型リアルタイム解析基盤の開発		2016/12/01〜2019/03/31</li>
             <li>挑戦的萌芽研究	分担	ロボットを介した偶発的遠隔コミュニケーションの誘発原理の解明 2023/06/30〜2025/03/31</li>
           </ul>
@@ -207,7 +200,7 @@
           IEEE， ACM, 電子情報通信学会，情報処理学会各会員．
       </section>
       <section class="activity">
-        <a name="activity"/>
+        <div id="activity"></div>
         <h1> 社会活動 </h1>
         <h2> 大学運営 </h2>
         <ul>
@@ -228,9 +221,9 @@
           <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 食メディア研究会	運営委員		2013/06/01〜2015/05/31</li>
           <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 食メディア研究会	幹事		2018/06/01〜2019/05/31</li>
           <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 食メディア研究会	委員長		2019/06/01〜2020/05/31</li>
-          <li> 情報処理学会 コンピュータビジョンとイメージメディア研究会 プログラム担当幹事 2018/04/01〜2022/03/31(予定)</li>
-          <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 庶務幹事 2020/06/01〜2022/05/31 (予定)
-          <li> 電子情報通信学会 ヒューマンコミュニケーション基礎研究会 専門委員 2020/06/01〜．
+          <li> 情報処理学会 コンピュータビジョンとイメージメディア研究会 プログラム担当幹事 2018/04/01〜2022/03/31</li>
+          <li> 電子情報通信学会 ヒューマンコミュニケーショングループ 庶務幹事 2020/06/01〜2022/05/31</li>
+          <li> 電子情報通信学会 ヒューマンコミュニケーション基礎研究会 専門委員 2020/06/01〜</li>
         </ul>
         <h3> 学術会議・論文誌等運営 </h3>
         <ul>
@@ -261,7 +254,7 @@
           <li>AAAI2021, CVPR2021, ICCV2021, ACMMM2021, BMVC2021, ACMMMAsia2021</li>
           <li>AAAI2022, CVPR2022, ICME2022, MIPR2022, ECCV2022, ACMMM2022, ACCV2022, ACM MMAsia2022</li>
           <li>CVPR2023, ICME2023, MIPR2023, ICCV2023, ACMMM2023, ACM MMAsia2023, NeurIPS2023</li>
-          <li>ICLR2024, CVPR2024, ICME2024, MIPR2023, ECCV2024, ACMMM2024, ACCV2024 </li>
+          <li>ICLR2024, CVPR2024, ICME2024, MIPR2024, ECCV2024, ACMMM2024, ACCV2024</li>
           <li>その他，論文誌等多数</li>
         </ul>
         <h2> 産学連携 </h2>
@@ -269,27 +262,27 @@
           <ul>
             <li>株式会社LIXIL 学術指導 2016/11/01〜2018/3/31</li>
           </ul>
-          <h3> 共同研究他 </h2>
+          <h3> 共同研究他 </h3>
           <ul>
             <li>クックパッド株式会社 料理画像とレシピテキストとの対応付けに関する研究 2016/07/01〜2017/06/30</li>
-            <li>クックパッド株式会社 画像処理にもとづく Machine-Readable なレシピ表現言語の開発 2017/07/01〜2018/03/31</li>
+            <li>クックパッド株式会社 画像処理にもとづく Machine-Readable なレシピ表現言語の開発 2017/07/01〜2018/03/31</li>
           </ul>
         <h2> 受賞 </h2>
           <ul>
-            <li> <a href="https://www.ieice.org/~cea/workshop/2012/">CEA2012 Best Paper Award</a>: A. Hashimoto et al.,<br/> "Recognizing ingredients at cutting process by integrating multimodal features"</li>
-            <li> <a href="https://www.ieice.org/~cea/workshop/2019/award.html">CEA2019 Best Paper Award</a>(the 2nd author): T. Nishimura et al., <br/>"Frame Selection for Producing Recipe with Pictures from an Execution Video of a Recipe"</li>
-            <li> <a href="http://cvim.ipsj.or.jp/MIRU2019/index.php?id=award"> MIRUインタラクティブ賞</a>(the 3rd author): R. Yonetani et al., "Decentralized Learning of Generative Adversarial Networks from Multi-Client Non-iid Data"</li>
-            <li> <a href="https://www.hcg-ieice.org/hcg-symposium/2019/award#top">HCGシンポジウム2019 優秀インタラクティブ発表賞</a>(the last author): 濱　龍太郎他, "調理スぺースの概念モデルの可視化の検討" </li>
-            <li> <a href="https://sites.google.com/view/miru2020/%E3%83%9B%E3%83%BC%E3%83%A0/%E8%A1%A8%E5%BD%B0?authuser=0#h.bz6p0og6chgu">MIRU2020 論文評価功労賞</a>(10名選出)</li>
-            <li> <a href="http://cvpr2021.thecvf.com/node/184">CVPR2021 Outstanding Reviewer</a> (5248人の査読者中，1065名(約20%)選出)</a></li>
-            <li> <a href="http://cvim.ipsj.or.jp/MIRU2021/award/">MIRU2021 論文評価功労賞</a>(15名選出)</li>
-            <li> <a href="https://www.anlp.jp/award/ronbun.html">言語処理学会論文賞2022(共著論文)</a>: 西村太一他, "BIOVL2データセット：生化学分野における一人称視点の実験映像への言語アノテーション"</li>
+            <li> <a href="https://www.ieice.org/~cea/workshop/2012/" target="_blank">CEA2012 Best Paper Award</a>: A. Hashimoto et al.,<br/> "Recognizing ingredients at cutting process by integrating multimodal features"</li>
+            <li> <a href="https://www.ieice.org/~cea/workshop/2019/award.html" target="_blank">CEA2019 Best Paper Award</a>(the 2nd author): T. Nishimura et al., <br/>"Frame Selection for Producing Recipe with Pictures from an Execution Video of a Recipe"</li>
+            <li> <a href="http://cvim.ipsj.or.jp/MIRU2019/index.php?id=award" target="_blank"> MIRUインタラクティブ賞</a>(the 3rd author): R. Yonetani et al., "Decentralized Learning of Generative Adversarial Networks from Multi-Client Non-iid Data"</li>
+            <li> <a href="https://www.hcg-ieice.org/hcg-symposium/2019/award#top" target="_blank">HCGシンポジウム2019 優秀インタラクティブ発表賞</a>(the last author): 濱　龍太郎他, "調理スぺースの概念モデルの可視化の検討" </li>
+            <li> <a href="https://sites.google.com/view/miru2020/%E3%83%9B%E3%83%BC%E3%83%A0/%E8%A1%A8%E5%BD%B0?authuser=0#h.bz6p0og6chgu" target="_blank">MIRU2020 論文評価功労賞</a>(10名選出)</li>
+            <li> <a href="http://cvpr2021.thecvf.com/node/184" target="_blank">CVPR2021 Outstanding Reviewer</a> (5248人の査読者中，1065名(約20%)選出)</li>
+            <li> <a href="http://cvim.ipsj.or.jp/MIRU2021/award/" target="_blank">MIRU2021 論文評価功労賞</a>(15名選出)</li>
+            <li> <a href="https://www.anlp.jp/award/ronbun.html" target="_blank">言語処理学会論文賞2022(共著論文)</a>: 西村太一他, "BIOVL2データセット：生化学分野における一人称視点の実験映像への言語アノテーション"</li>
           </ul>
       </section>
     </article>
   </main>
   <footer>
-    <small>Copyright &copy; 2017 Atsushi Hashimoto All Rights Reserved.</small>
+    <small>Copyright &copy; 2017-2024 Atsushi Hashimoto All Rights Reserved.</small>
   </footer>
   <script>
     var navigation = responsiveNav("#nav", {
